@@ -1,0 +1,101 @@
+body{display: flex;}
+
+#center{
+    border: 1px solid #ddd;
+    width: 150px;
+    height: 300px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+#center2{
+    border: 1px solid #ddd;
+    width: 150px;
+    height: 300px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+#center3{
+    border: 1px solid #ddd;
+    width: 150px;
+    height: 300px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+#center div{
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#center2 div{
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#center3 div{
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#first{
+    background-color: rgb(68, 68, 119);
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: -50%;
+}
+#second{
+    background-color: rgb(207, 105, 87);
+    position: relative;
+}
+#third{ background-color: rgb(0, 128, 96);}
+#fourth{ background-color: rgb(207, 146, 33);}
+
+.d1{
+background-color: rgb(68, 68, 119);
+position: absolute;
+top: -50%;
+right: -50%;
+z-index: -5;
+}
+.d2{
+background-color: rgb(207, 105, 87);
+position: relative;
+}
+.d3{ background-color: rgb(0, 128, 96);}
+.d4{ background-color: rgb(207, 146, 33);}
+
+.v1{
+    background-color: rgb(68, 68, 119);
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    z-index: 5;  
+}
+.v2{
+    background-color: rgb(207, 105, 87);
+    position: relative;
+}

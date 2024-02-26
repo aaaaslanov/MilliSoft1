@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{ width: 30%; }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Login</legend>
+        <label for="name">UserName*</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="pass">Password*</label><br>
+        <input type="password" id="pass" name="pass"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Gender*</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </fieldset>
+    <fieldset>
+        <legend>Programming Skill</legend>
+        <input type="checkbox" id="java" name="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="c" name="c" value="c">
+        <label for="c">C++</label>
+        <input type="checkbox" id="cc" name="cc" value="cc">
+        <label for="cc">C#</label>
+    </fieldset>
+    <fieldset>
+        <legend>Country</legend>
+        <label for="count">Choose a country </label>
+        <select id="count" name="count">
+            <option hidden selected value="">Azerbaijan</option>
+            <option disabled value="USA">USA</option>
+            <option value="Russia">Russia</option>
+            <option value="Ukraine">Ukraine</option>
+        </select>
+    </fieldset><br>
+    <textarea id="comm" name="comm" cols="38" rows="7">Enter your comment here</textarea><br>
+    <input type="submit" value="SEND">
+    <input type="reset" value="RESET">
+</body>
+</html>

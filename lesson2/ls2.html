@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+</head>
+<body>
+    <p><strong>HTML Form</strong></p>
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name"><br><br>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name"><br><br>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="email"><br><br>
+    <label for="number">Phone: </label>
+    <input type="tel" id="number" name="number"><br><br>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option hidden selected value="">Choose a country</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option disabled value="USA">USA</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="Russian">Russian</option>
+    </select><br><br>
+    <label for="city">City:</label>
+    <select id="city" name="city">
+        <option hidden selected value="">Choose a city</option>
+        <option value="Baku">Baku</option>
+        <option disabled value="Los-Angeles">Los-Angeles</option>
+        <option value="Kiev">Kiev</option>
+        <option value="Moscow">Moscow</option>
+    </select><br><br>
+    <label for="language">Language(s):</label>
+    <input type="checkbox" id="azerb" name="language" value="azerb">
+    <label for="azerb">Azerbaijanian</label>
+    <input type="checkbox" id="english" name="language" value="english">
+    <label for="english">English</label>
+    <input type="checkbox" id="russian" name="language" value="russian">
+    <label for="russian">Russian</label>
+    <input type="checkbox" id="ukrainian" name="language" value="ukrainian">
+    <label for="ukrainian">Ukrainian</label><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</body>
+</html>

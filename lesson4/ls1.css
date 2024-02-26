@@ -1,0 +1,96 @@
+.text {
+    text-align: center;
+}
+.text1 {
+    border: solid 0.1px;
+    margin: 20px 20px;
+    margin: 20px 20px;
+    border-style: groove;
+    background-color: rgba(128, 128, 128, 0.131);
+}
+.text2 {
+    border: solid 2px;
+    margin: 20px 20px;
+}
+.text3 {
+    border: solid 2px;
+    margin: 20px 20px;
+    border-style: dashed;
+}
+.text4 {
+    border: solid 3px;
+    margin: 20px 20px;
+    border-style: dotted;
+}
+.text5 {
+    border: solid 5px;
+    margin: 20px 20px;
+    border-style: double;
+}
+.text6 {
+    border: solid 4px;
+    margin: 20px 20px;
+    border-top-color:blue ;
+    border-left-color:blue ;
+    border-right-color:orange ;
+    border-bottom-color: rgb(148, 7, 7);
+}
+.text7 {
+    border: solid 5px;
+    margin: 20px 20px;
+    border-bottom: double;
+    border-top: none;
+    border-left: dotted;
+    border-right: dashed;
+}
+
+.task{
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.512);
+}
+.task p{
+    border-bottom: 2px solid black;
+    padding: 5px 40px;
+    font-style: italic;
+}
+
+.task2 span{
+    padding-top: 10px;
+    display: block;
+    border: solid 2px;
+    width: 15%;
+    height: 30px;
+    text-align: center;
+}
+
+.task3 table{ width: 50%;}
+.task3 td{ text-align: center;}
+
+.task4{
+    display: flex;
+    gap: 30px;
+}
+.task5{
+    display: flex;
+    gap: 30px;
+    padding-top:30px;
+}
+
+.task6{
+    width: 500px;
+    box-shadow: 5px 15px 95px 15px rgba(0, 0, 0, 0.432);
+    margin-left: 250px;   
+}
+
+header{
+    background-color:cornflowerblue;
+    color: white;
+    padding: 10px;
+    font-family: Calibri;
+}
+footer{
+    background-color:cornflowerblue;
+    color: white;
+    padding: 5px;
+    font-family: Calibri;
+}
