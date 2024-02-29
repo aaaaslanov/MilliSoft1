@@ -17,6 +17,7 @@
   width: 735px;
   height: 395px;
   padding: 30px 20px;
+  margin-top: 100px;
   background-color: #ffffff;
   color: black;
   position: relative;
@@ -27,11 +28,9 @@
 }
 .title_page h1{
   z-index: 3;
-  position: relative;
-    
+  font-style: italic;
 }
 .title_page h4 {
-  position: relative;
   top: 20px;
   z-index: 1;
 }
