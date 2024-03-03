@@ -1,0 +1,414 @@
+@font-face {font-family: myFont; src: url(../fonts/Metropolis-Black.otf);}
+@font-face { font-family: myFontlogo; src: url(../fonts/Ridelans-Regular-SVG.otf);}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{font-size: 16px; scroll-behavior: smooth;}
+body{font-family: myFont;}
+.container{ width: 80%;}
+
+header{
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    background-color: transparent;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+header #logo a{transition: font-size 0.3 ease-in-out;}
+header.small{
+    background-color:rgba(0, 0, 0, 0.9);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    transition: font-size 0.3 ease-in-out;
+}
+header.small #logo a{font-size: 1.25rem; transition: font-size 0.3s ease-in-out;}
+
+#logo a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: myFontlogo;
+    color: #cca000;
+    transition: font-size 0.3s ease-in-out;
+}
+.df{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {list-style: none;display: flex;}
+#nav li a{
+    color: black;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out,;
+}
+#nav li a:hover{ color: #cca000;}
+
+#main{
+    height: 100vh;
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+
+}
+.subheading{
+    color: #fff;
+    font-size: 2.25rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+.main_more{ text-align: center;}
+.main_more  a{
+    padding: 1.25rem 2.5rem;
+    color: #fff;
+    background-color: #ffc800;;
+    border-radius: 5px;
+    transition: 0.3 all;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.main_more  a:hover{ background-color: #cca000;}
+#services{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text-center{ text-align: center;}
+
+#services h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#services h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #6c757d ;
+    margin-bottom: 1.5rem;
+
+}
+.services-content{
+    display: flex;
+    justify-content: space-between;
+}
+.services-content div{
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.services-content div span{
+    display: inline-block;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffc800;
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.services-content div h4{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+.services-content div p{
+    color: #6c757d !important;
+    font-family: Roboto Slab !important;
+    text-align: center;
+}
+
+#portfolio{
+    background-color: #f8f9fa;;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolio-content>div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.portfolio-content div a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.p-item { width: 100%; position: relative;}
+.p-item img{ width: 100%; height: auto;}
+.p-item-desc{
+    background-color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+.p-desc-name{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+.p-item:hover .zoom{opacity: 1;}
+
+
+.text-center h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem; 
+    color: #212529;
+}
+.text-center h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #6c757d ;
+    margin-bottom: 1.5rem;
+}
+.desc-subhead{
+    color: #6c757d !important;
+    font-style: italic;
+    font-family: "Roboto Slab";
+}
+
+.zoom{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 200, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity ease-in-out 0.25s;
+    color: #fff;
+    font-size: 3rem;
+}
+
+#team{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+#team-content{ display: flex; justify-content: space-between;}
+.tc-item{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tc-item img{
+ width: 14rem;
+ height: 14rem;
+ border-radius: 50%;
+ border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.tc-item  h4{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    font-size: 2rem;
+}
+.tc-item p{
+    color: #6c757d !important;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.social-m {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-m a{
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: #212529;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: 0.3s all;
+}
+.social-m a:hover{ background: #373b3e;}
+
+#about{
+   display: flex;
+   justify-content: center;
+   padding-top: 4.5rem;
+   padding-bottom: 4.5rem;
+}
+
+#b-social{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.bs-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bs-center>div{object-fit: cover;}
+.bs-center>div img{
+    max-width: 100%;
+    height: 2.75rem;
+    object-fit: cover;
+}
+
+#contact{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #212529;
+    background-image: url(../images/map-image.png);
+}
+
+.row{ display: flex;}
+.row .col6{
+width: 50%;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.input_box{ width: 100%;}
+.input_box input{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 5px;
+    outline:none;
+    border: 1px solid #fff;
+}
+.input_box input:focus,textarea:focus{
+    border: 1px solid;
+    border-color: #ffc800;
+    box-shadow: none;
+}
+.input_box input:invalid{ border: 1px solid #dc3545;;}
+.input_box{ margin-bottom: 1.5rem;}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#contact-msg{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mb0{ margin-bottom: 0 !important;}
+.mt{ margin-top: 4rem;}
+
+.send-m{
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffc800;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.txt-white{color: #fff !important;}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.f-items{display: flex; justify-content: space-between;}
+.f-items:nth-child(1){
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+ .f-tem2 a{
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+    background-color: #212529;
+    color: #fff;
+    transition: 0.3s all;
+    margin-right: 0.5rem;
+}
+.f-tem2 a:hover{ color: #373b3e;}
+.f-tem3{ text-align: right;}
+.f-tem3 a{ color: #212529 !important;}
+.f-item{display: flex; align-items: center;}
+
+.timeline{
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #e9ecef;
+}

@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  left: 40px;
+  left: 60px;
 }
 .title_page h1{
   z-index: 3;
