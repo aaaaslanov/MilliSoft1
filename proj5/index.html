@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <title> Document </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav class="navbar d-flex j-between ai-center w-100">
+    <a href="#" id="head" class="upper t-none text-white nav-logo"> START BOOTSTRAP</a>
+    <ul class="d-flex j-between">
+        <li><a href="#portfolio" class="upper t-none text-white">PORTFOLIO</a></li>
+        <li><a href="#about" class="upper t-none text-white"> ABOUT</a></li>
+        <li><a href="#contact" class="upper t-none text-white">CONTACT</a></li>
+    </ul>
+</nav>
+<header class="page-section d-flex flex-column j-center ai-center">
+    <img src="./image/header.svg" alt=""/>
+    <h1 class="upper text-white">START BOOTSTRAP</h1>
+    <div class="star d-flex flex-row j-between ai-center star-light">
+        <hr class="w-100"/>
+        <i class="fa-solid fa-star text-center text-white"></i>
+        <hr class="w-100"/>
+    </div>
+    <p class="text-white">Graphic Artist - Web Designer - Illustrator</p>
+</header>
+<section id="portfolio" class="page-section text-center">
+    <h2 class="upper">PORTFOLIO</h2>
+    <div class="star d-flex flex-row j-between ai-center star-dark">
+        <hr class="w-100"/>
+        <i class="fa-solid fa-star text-center"></i>
+        <hr class="w-100"/>
+    </div>
+    <div id="portfolios" class="d-flex flex-row">
+        <div class="portfolio">
+            <img class="w-100 h-100" src="./image/cabin.png" alt=""/>
+            <div class="bg d-flex j-center ai-center text-white text-center w-100 h-100">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="portfolio">
+            <img class="w-100 h-100" src="./image/cake.png" alt=""/>
+            <div class="bg d-flex j-center ai-center text-white text-center w-100 h-100">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="portfolio">
+            <img class="w-100 h-100" src="./image/circus.png" alt=""/>
+            <div class="bg d-flex j-center ai-center text-white text-center w-100 h-100">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="portfolio">
+            <img class="w-100 h-100" src="./image/game.png" alt=""/>
+            <div class="bg d-flex j-center ai-center text-white text-center w-100 h-100">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="portfolio">
+            <img class="w-100 h-100" src="./image/safe.png" alt=""/>
+            <div class="bg d-flex j-center ai-center text-white text-center w-100 h-100">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="portfolio">
+            <img class="w-100 h-100" src="./image/submarine.png" alt=""/>
+            <div class="bg d-flex j-center ai-center text-white text-center w-100 h-100">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="page-section text-white d-flex flex-column j-center">
+    <h2 class="text-center upper">ABOUT</h2>
+    <div class="star d-flex flex-row j-between ai-center star-light">
+        <hr class="w-100"/>
+        <i class="fa-solid fa-star text-center text-white"></i>
+        <hr class="w-100"/>
+    </div>
+    <div id="text" class="d-flex flex-row j-between">
+        <p>
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source
+            files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+        </p>
+        <p>
+            You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email
+            address to the contact form to make it fully functional!
+        </p>
+    </div>
+    <a href="#" class="t-none text-white"><i class="fa-solid fa-download"></i> Free Download!</a>
+</section>
+<section id="contact" class="page-section d-flex flex-column j-center">
+    <h2 class="text-center upper">CONTACT ME</h2>
+    <div class="star d-flex flex-row j-between ai-center star-dark">
+        <hr class="w-100"/>
+        <i class="fa-solid fa-star text-center"></i>
+        <hr class="w-100"/>
+    </div>
+    <form method="POST">
+        <div class="input-group">
+            <input type="text" id="name" class="form-control w-100" required/>
+            <label for="name" class="w-100 h-100">Full Name</label>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" class="form-control w-100" required/>
+            <label for="email" class="w-100 h-100">Email address</label>
+        </div>
+        <div class="input-group">
+            <input type="tel" id="phone" class="form-control w-100" required/>
+            <label for="phone" class="w-100 h-100">Phone number</label>
+        </div>
+        <div class="input-group">
+            <textarea cols="30" rows="10" id="message" class="form-control w-100" required></textarea>
+            <label for="message" class="w-100 h-100">Message</label>
+        </div>
+        <div class="input-group">
+            <input type="submit" value="Send" class="text-white"/>
+        </div>
+    </form>
+</section>
+<footer class="text-center text-white d-flex flex-row j-between">
+    <div>
+        <h4 class="upper">LOCATION</h4>
+        <p>2215 John Daniel Drive Clark, MO 65243</p>
+    </div>
+    <div>
+        <h4 class="upper">AROUND THE WEB</h4>
+        <div id="social" class="d-flex flex-row w-100">
+            <a class="d-flex t-none text-white j-center ai-center">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="d-flex t-none text-white j-center ai-center">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="d-flex t-none text-white j-center ai-center">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="d-flex t-none text-white j-center ai-center">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+        </div>
+    </div>
+    <div>
+        <h4 class="upper">ABOUT FREELANCER</h4>
+        <p>
+            Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#">Start Bootstrap</a>.
+        </p>
+    </div>
+</footer>
+<section id="copyright" class="text-center text-white">
+    <small>Copyright © Your Website 2023</small>
+</section>
+<script src="https://kit.fontawesome.com/ae4ff8f907.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous">
+</script>
+</body>
+</html>
