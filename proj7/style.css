@@ -1,0 +1,42 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.coffee {left: 500px; top: 200px; position: relative;}
+img {width: 400px;}
+
+.coffee div {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  left: 150px;
+  bottom: 150px;
+  position: absolute;
+  opacity: 0;
+  background-color: #bea7a7;
+}
+
+.c1  { animation: steam1 4s ease-out infinite;}
+.c3  { animation: steam1 4s ease-out 1s infinite;}
+.c2  { animation: steam2 4s ease-out 0.5S infinite;}
+.c4  { animation: steam2 4s ease-out 1.5s infinite;}
+
+@keyframes steam1 {
+    0% {
+        opacity: 0.4;
+        width: 50px;
+        height: 50px;
+        transform: translateX(0)  translateY(0)  scale(0.25);
+    }
+    100% {
+        transform: translateX(-20px)  translateY(-200px) scale(1.2);
+        opacity: 0;
+    }
+}
+@keyframes steam2 {
+    0% {
+        opacity: 0.4; width: 50px; height: 50px;
+        transform: translateX(0)  translateY(0)  scale(0.25);
+    }
+    100% {
+        transform: translateX(20px) translateY(-200px)  scale(1.2);
+        opacity: 0;
+    }
+}
