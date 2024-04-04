@@ -1,95 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" 
-    rel="stylesheet">
-<link rel="stylesheet" href="">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-</section>
-<section id="portfolio">
-  <div class="container">
-    <div class="portfolio-content">
-        <div>
-          <a>
-            <div class="p-item">
-                <img src="images/1.jpg" alt="">
-                <div class="zoom"><i class="fa-solid fa-plus"></i></div>
+<section id="portfolio" class="page-section text-center">
+    <div id="portfolio-grid" class="d-flex flex-evenly container">
+        <div class="w-30" id="modal1Btn">
+            <div class="portfolio pos-rel h-auto w-100">
+                <img class="w-100 h-auto" src="image/1.jpg" alt=""/>
+                <div class="bg pos-ab t-0 ai-center text-white w-100 text-center d-flex j-center">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
             </div>
-            <div class="p-item-desc">
-                <div class="p-desc-name">Threads</div>
-                <div class="desc-subhead">Illustration</div>
+            <div class="caption">
+                <h4>Threads</h4>
+                <h5 class="text-secondary">Illustration</h5>
             </div>
-          </a>
         </div>
-        <div>
-            <a>
-              <div class="p-item">
-                  <img src="images/2.jpg" alt="">
-                  <div class="zoom"><i class="fa-solid fa-plus"></i></div>
-              </div>
-              <div class="p-item-desc">
-                  <div class="p-desc-name">Explore</div>
-                  <div class="desc-subhead">Graphic Design</div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a>
-              <div class="p-item">
-                  <img src="images/3.jpg" alt="">
-                  <div class="zoom"><i class="fa-solid fa-plus"></i></div>
-              </div>
-              <div class="p-item-desc">
-                  <div class="p-desc-name">Finish</div>
-                  <div class="desc-subhead">Identity</div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a>
-              <div class="p-item">
-                  <img src="images/4.jpg" alt="">
-                  <div class="zoom"><i class="fa-solid fa-plus"></i></div>
-              </div>
-              <div class="p-item-desc">
-                  <div class="p-desc-name">Lines</div>
-                  <div class="desc-subhead">Branding</div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a>
-              <div class="p-item">
-                  <img src="images/5.jpg" alt="">
-                  <div class="zoom"><i class="fa-solid fa-plus"></i></div>
-              </div>
-              <div class="p-item-desc">
-                  <div class="p-desc-name">Southwest</div>
-                  <div class="desc-subhead">Website Design</div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a>
-              <div class="p-item">
-                  <img src="images/6.jpg" alt="">
-                  <div class="zoom"><i class="fa-solid fa-plus"></i></div>
-              </div>
-              <div class="p-item-desc">
-                  <div class="p-desc-name">Window</div>
-                  <div class="desc-subhead">Photography</div>
-              </div>
-            </a>
-          </div>         
-       </div>
-  </div>
+        <div class="w-30" id="modal2Btn">
+            <div class="portfolio pos-rel h-auto w-100">
+                <img class="w-100 h-auto" src="image/2.jpg" alt=""/>
+                <div class="bg pos-ab t-0 ai-center text-white w-100 text-center d-flex j-center">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Explore</h4>
+                <h5 class="text-secondary">Graphic Design</h5>
+            </div>
+        </div>
+        <div class="w-30" id="modal3Btn">
+            <div class="portfolio pos-rel h-auto w-100">
+                <img class="w-100 h-auto" src="image/3.jpg" alt=""/>
+                <div class="bg pos-ab t-0 ai-center text-white w-100 text-center d-flex j-center">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Finish</h4>
+                <h5 class="text-secondary">Identity</h5>
+            </div>
+        </div>
+        <div class="w-30" id="modal4Btn">
+            <div class="portfolio pos-rel h-auto w-100">
+                <img class="w-100 h-auto" src="image/4.jpg" alt=""/>
+                <div class="bg pos-ab t-0 ai-center text-white w-100 text-center d-flex j-center">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Lines</h4>
+                <h5 class="text-secondary">Branding</h5>
+            </div>
+        </div>
+        <div class="w-30" id="modal5Btn">
+            <div class="portfolio pos-rel h-auto w-100">
+                <img class="w-100 h-auto" src="image/5.jpg" alt=""/>
+                <div class="bg pos-ab t-0 ai-center text-white w-100 text-center d-flex j-center">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Southwest</h4>
+                <h5 class="text-secondary">Website Design</h5>
+            </div>
+        </div>
+        <div class="w-30" id="modal6Btn">
+            <div class="portfolio pos-rel h-auto w-100">
+                <img class="w-100 h-auto" src="image/6.jpg" alt=""/>
+                <div class="bg pos-ab t-0 ai-center text-white w-100 text-center d-flex j-center">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Window</h4>
+                <h5 class="text-secondary">Photography</h5>
+            </div>
+        </div>
+    </div>
 </section>
+<div id="modal1" class="modal text-center">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="upper">PROJECT NAME</h2>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="image/1.jpg" alt=""/>
+        <div class="modal-body">
+            <p>
+                Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                expedita
+                beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+            </p>
+            <ul>
+                <li><strong>Client:</strong> Threads</li>
+                <li><strong>Category:</strong> Illustration</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="modal2" class="modal text-center">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="upper">PROJECT NAME</h2>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="image/2.jpg" alt=""/>
+        <div class="modal-body">
+            <p>
+                Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                expedita
+                beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+            </p>
+            <ul>
+                <li><strong>Client:</strong> Explore</li>
+                <li><strong>Category:</strong> Graphic Design</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="modal3" class="modal text-center">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="upper">PROJECT NAME</h2>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="image/3.jpg" alt=""/>
+        <div class="modal-body">
+            <p>
+                Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                expedita
+                beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+            </p>
+            <ul>
+                <li><strong>Client:</strong> Finish</li>
+                <li><strong>Category:</strong> Identity</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="modal4" class="modal text-center">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="upper">PROJECT NAME</h2>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="image/4.jpg" alt=""/>
+        <div class="modal-body">
+            <p>
+                Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                expedita
+                beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+            </p>
+            <ul>
+                <li><strong>Client:</strong> Lines</li>
+                <li><strong>Category:</strong> Branding</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="modal5" class="modal text-center">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="upper">PROJECT NAME
+            </h2>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="image/5.jpg" alt=""/>
+        <div class="modal-body">
+            <p>
+                Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                expedita
+                beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+            </p>
+            <ul>
+                <li><strong>Client:</strong> Southwest</li>
+                <li><strong>Category:</strong> Website Design</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="modal6" class="modal text-center">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="upper">PROJECT NAME</h2>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="image/6.jpg" alt=""/>
+        <div class="modal-body">
+            <p>
+                Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                expedita
+                beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+            </p>
+            <ul>
+                <li><strong>Client:</strong> Window</li>
+                <li><strong>Category:</strong> Photography</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
