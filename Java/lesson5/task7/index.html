@@ -1,50 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dripicons/2.0.0/webfont.min.css"
-          integrity="sha512-pi7KSLdGMxSE62WWJ62B1R5/H7WNnIsj2f51MikplRt31K0uCZ1lfPSw/0Jb1flSz6Ed2YLSlox6Uulf7CaFiA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <section id="products" class="text-center">
-        <img src="image/shape1.png" alt="" id="shape1"/>
-        <img src="image/shape4.png" alt="" id="shape3"/>
-        <img src="image/shape2.png" alt="" id="shape2"/>
-        <img src="image/shape3.png" alt="" id="shape4"/>
-        <h1 class="text-dark">Our Product</h1>
-        <div id="filter" class="d-flex j-center">
-            <h4 class="text-muted">Fruits</h4> <span>|</span>
-            <h4 class="text-muted">Vegetables</h4> <span>|</span>
-            <h4 class="text-muted">Dried fruits</h4> <span>|</span>
-            <h4 class="text-muted">Dried vegetables</h4>
+<section id="products" class="text-center">
+    <img src="image/shape1.png" alt="" id="shape1"/>
+    <img src="image/shape4.png" alt="" id="shape3"/>
+    <img src="image/shape2.png" alt="" id="shape2"/>
+    <img src="image/shape3.png" alt="" id="shape4"/>
+    <h1 class="text-dark">Our Product</h1>
+    <div id="filter" class="d-flex j-center">
+        <h4 id="filter_fruit" class="text-muted">Fruits</h4>
+        <span>|</span>
+        <h4 id="filter_vegetable" class="text-muted">Vegetables</h4>
+        <span>|</span>
+        <h4 id="filter_driedFruit" class="text-muted">Dried fruits</h4>
+        <span>|</span>
+        <h4 id="filter_driedVegetable" class="text-muted">Dried vegetables</h4>
+    </div>
+    <img src="image/2.png" alt="" id="shape5"/>
+    <div id="fruits" class="product-grid container ma d-flex">
+        <div>
+            <img src="image/peach.png" alt=""/>
+            <a href="#!" class="text-none text-dark">Rich May</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
         </div>
-        <img src="image/2.png" alt="" id="shape5"/>
-        <div id="product-grid" class="container ma d-flex">
-            <div>
-                <img src="image/peach.png" alt=""/>
-                <a href="#!" class="text-none text-dark">Rich May</a>
-                <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
-            </div>
-            <div>
-                <img src="image/peach2.png" alt=""/>
-                <a href="#!" class="text-none text-dark">Summer Sweat</a>
-                <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
-            </div>
-            <div>
-                <img src="image/peach3.png" alt=""/>
-                <a href="#!" class="text-none text-dark">White Fresh</a>
-                <div class="bg">
-                    <a href="#!"><i class="fas fa-search"></i></a></div>
-            </div>
-            <div>
-                <img src="image/peach4.png" alt=""/>
-                <a href="#!" class="text-none text-dark">Peach Flat</a>
-                <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
-            </div>
+        <div>
+            <img src="image/peach2.png" alt=""/>
+            <a href="#!" class="text-none text-dark">Summer Sweat</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
         </div>
-    </section>
-    <script src="https://kit.fontawesome.com/ae4ff8f907.js" crossorigin="anonymous"></script>
+        <div>
+            <img src="image/peach3.png" alt=""/>
+            <a href="#!" class="text-none text-dark">White Fresh</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/peach4.png" alt=""/>
+            <a href="#!" class="text-none text-dark">Peach Flat</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+    </div>
+    <div id="vegetables" class="product-grid container ma d-flex">
+        <div>
+            <img src="image/tomato.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Tomato</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/basilica.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Basilica</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/garlic.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Garlic</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/dill.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Dill</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+    </div>
+    <div id="driedFruits" class="product-grid container ma d-flex">
+        <div>
+            <img src="image/apricot.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Dried Apricot</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/nut.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Nut</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/walnut.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Walnut</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/apple.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Dried Apple</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+    </div>
+    <div id="driedVegetables" class="product-grid container ma d-flex">
+        <div>
+            <img src="image/spinach.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Dried Spinach</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/driedDill.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Dried Dill</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/mint.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Dried Mint</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div>
+            <img src="image/parsley.jpg" alt=""/>
+            <a href="#!" class="text-none text-dark">Dried Parsley</a>
+            <div class="bg"><a href="#!"><i class="fas fa-search"></i></a></div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
