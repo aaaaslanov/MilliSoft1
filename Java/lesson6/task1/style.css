@@ -1,0 +1,8 @@
+* {margin: 0; padding: 0; box-sizing: border-box; background-color: gray;}
+body {
+    display: flex; height: 100vh;
+    justify-content: center; flex-flow: column wrap;
+    align-content: center; align-items: center;
+}
+h2{text-align: right; padding: 40px;}
+button {width: 110px; height: 30px;}
