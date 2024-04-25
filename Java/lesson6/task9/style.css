@@ -1,0 +1,44 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {  
+    padding-top: 50px;
+}
+#add {
+    background-color: black;
+    color: #FFF; border: none; border-radius: 5px;
+    padding: 10px 30px; margin: 30px 0 0 55px;
+}
+input[type=search] {height: 35px; padding-left: 20px; border-radius: 5px;}
+table, th, td { border: 1px solid black; border-collapse: collapse; text-align: center;}
+input[type=search], table {width: 80%; align-self: center;}
+td button {
+    height: 40px;
+    background-color: transparent; font-size: 2rem;
+    border: none; cursor: pointer;
+}
+.edit {color:cadetblue;}
+.remove {color:darkred;}
+.modal {
+    display: none; flex-flow: column wrap;
+    justify-content: center; align-content: center;
+    align-items: center; gap: 20px;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 90%; height: 360px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    input {
+        height: 50px; padding-left: 12px;
+        border: none; outline: none;
+        width: 70%; font-size: 1.5rem;
+    }
+    .modal-footer {
+        align-self: flex-start;
+        .button {
+            padding: 15px 40px;
+            color: #FFF; border: none;
+            cursor: pointer; margin: 5px;
+        }
+        .submit {background-color: olive;}
+        .close {background-color: darkred;}
+    }
+}

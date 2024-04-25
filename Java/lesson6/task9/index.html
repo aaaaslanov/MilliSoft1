@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Document</title>
+</head>
+<body>
+<div class="buttons" style="display: block; padding: 20px;">
+<button id="add">Add Row</button>
+<input style="width: 120px;" type="search" placeholder="search.."/>
+</div>
+
+<div style="padding-left: 75px;">
+<table>
+    <thead>
+    <tr style="height: 40px;">
+        <th>№</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</div>
+<div id="addModal" class="modal">
+    <input type="text" id="addName" placeholder="Name"/>
+    <input type="text" id="addSurname" placeholder="Surname"/>
+    <input type="number" id="addAge" placeholder="Age"/>
+    <div class="modal-footer">
+        <button id="addBtn" class="submit button">Create</button>
+        <button class="close button">Close</button>
+    </div>
+</div>
+<div id="editModal" class="modal">
+    <input type="text" id="editName" placeholder="Name"/>
+    <input type="text" id="editSurname" placeholder="Surname"/>
+    <input type="number" id="editAge" placeholder="Age"/>
+    <div class="modal-footer">
+        <button id="editBtn" class="submit button">Creat</button>
+        <button class="close button">Close</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

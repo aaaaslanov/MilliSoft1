@@ -1,0 +1,41 @@
+* {margin: 0; padding: 0; box-sizing: border-box; background-color: gray;}
+body {
+    display: flex; flex-flow: column wrap;
+    justify-content: center; align-items: center;
+}
+h1 {padding-bottom: 40px; color: darkslategray;}
+#filter {
+    display: flex; justify-content: center;
+    gap: 100px; margin-bottom: 75px;
+    label {
+        display: inline-block;
+        background-color: #000;
+        color: #FFF; padding: 0 10px;
+        text-align: center; line-height: 50px;
+        cursor: pointer; border-radius: 4px;
+        height: 47px; width: 77px;
+    }
+    input {
+        appearance: none;
+        &:checked + label {background-color: darkslategray; color: #FFF;}
+    }
+}
+#cards {
+    display: flex; flex-flow: row wrap;
+    justify-content: center; padding: 0 30px;
+    .card {
+        display: flex; flex-flow: column wrap;
+        justify-content: flex-start; align-items: center;
+        width: 415px; height: 375px;
+        border: 1px solid darkslategray; padding: 16px;
+        margin: -25px 0; border-radius: 10px;
+        .card-img {
+            width: 380px; height: 250px;
+            img {
+                width: 100%; height: 100%;
+                object-fit: cover; margin-bottom: 5px;
+            }
+            h3, p {text-align: center; margin-bottom: 10px;}
+        }
+    }
+}

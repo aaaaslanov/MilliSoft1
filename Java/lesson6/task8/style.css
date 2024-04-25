@@ -1,0 +1,17 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    flex-flow: column wrap; display: flex;
+    justify-content: center; height: 100vh;
+}
+a {text-decoration: none; color: black; cursor: pointer;}
+ul {padding-left: 120px; padding-bottom:65px;}
+.active {
+    color: #fff; border-radius: 5px;
+    background-color:cadetblue; padding: 10px 15px;
+}
+#pagination {
+    display: flex; justify-content: center;
+    align-items: center; gap: 25px; font-size: 1.5rem;
+    #pages {display: flex; justify-content: center; align-items: center; gap: 25px;}
+    button {background-color: transparent; border: none; cursor: pointer;}
+}

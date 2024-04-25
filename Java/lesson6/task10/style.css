@@ -1,0 +1,45 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+button {border: none; color: #FFF; cursor: pointer;}
+.ieqb {border-radius: 25%; padding: 5px 15px;}
+.modal-button, .td-button, .th-button {border-radius: 5px; padding: 5px 15px;}
+.blue {background-color: #3BA6FF;}
+.red {background-color: #FF6A63;}
+.yellow {background-color: #FFC102;}
+.green {background-color: #009500;}
+.de {background-color: #343E45;}
+body {
+    display: flex; justify-content: center; height: 100vh;
+    align-content: center; align-items: center;
+}
+table {
+    width: 90%;
+    td {&:nth-child(3), &:nth-child(4), &:last-child {text-align: center;}}
+}
+table, th, td {border: 1px solid black; border-collapse: collapse;}
+#modal {
+    display: none; justify-content: center;
+    align-content: center; align-items: center;
+    position: fixed; top: 0;
+    bottom: 0; left: 0;
+    right: 0; background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    #modal-content {
+        display: flex; flex-flow: row wrap;
+        justify-content: flex-start; align-content: center;
+        align-items: center; gap: 15px;
+        width: 435px; height: 160px;
+        background-color: rgb(255, 255, 255); position: relative;
+        h2 {color: #43AAFF;}
+        #modal-buttons {
+            display: flex; flex-flow: row wrap;
+            justify-content: space-around; align-content: center;
+            align-items: center; gap: 13px;
+        }
+        #close {
+            position: absolute; top: 0;
+            right: -35px; cursor: pointer;
+            z-index: 100; background-color: #FFF;
+            border-radius: 50%; padding: 5px 7px;            
+        }
+    }
+}

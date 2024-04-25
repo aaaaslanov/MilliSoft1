@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<div id="form">
+    <input type="text" id="input" placeholder="Title"/>
+    <button id="add">Add</button>
+</div>
+<div id="tasks">
+    <section>
+        <h3>Things to do</h3>
+        <div><select multiple id="to_do"></select></div>
+    </section>
+    <div class="arrows">
+        <button id="to_do_to_doing"> <i class="fa-solid fa-arrow-right"></i></button>
+        <button id="doing_to_to_do"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
+    <section>
+        <h3>Things that are being done</h3>
+        <div><select multiple id="doing"></select></div>
+    </section>
+    <div class="arrows">
+        <button id="doing_to_done"><i class="fa-solid fa-arrow-right"></i></button>
+        <button id="done_to_doing"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
+    <section>
+        <h3>Things that are done</h3>
+        <div><select multiple id="done"></select></div>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

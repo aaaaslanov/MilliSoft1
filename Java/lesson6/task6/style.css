@@ -1,0 +1,22 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+h1 {align-self: flex-start; padding-left: 35%; font-weight: lighter;}
+body {
+    display: flex; flex-flow: column wrap;
+    align-items: center; height: 100vh;
+    justify-content: center;
+}
+#range {
+    display: flex; flex-flow: row wrap;
+    justify-content: center; align-items: center;
+    gap: 5px; width: 50%;
+    input {
+        width: 90%; border: solid 1px black;
+        height: 35px; outline: none; appearance: none;
+        transition: background 450ms ease-in;
+        &::-webkit-slider-thumb {opacity: 0;}
+    }
+    button {
+        background-color: transparent;
+        border: none; font-size: 2rem; cursor: pointer;
+    }
+}
